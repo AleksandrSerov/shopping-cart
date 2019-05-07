@@ -30,7 +30,10 @@
 
 <script>
 export default {
-  name: "ProductList"
+  name: "ProductList",
+  created() {
+    this.$store.dispatch("getProductItems");
+  }
 };
 </script>
 
