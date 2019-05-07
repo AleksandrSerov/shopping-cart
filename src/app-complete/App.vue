@@ -3,10 +3,10 @@
     <div class="container">
       <div class="columns">
         <div class="column is-3">
-          <CartList />
+          <CartList/>
         </div>
         <div class="column is-9">
-          <ProductList />
+          <ProductList/>
         </div>
       </div>
     </div>
@@ -14,21 +14,22 @@
 </template>
 
 <script>
-import CartList from './components/cart/CartList';
-import ProductList from './components/product/ProductList';
+import CartList from "./components/cart/CartList";
+import ProductList from "./components/product/ProductList";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     CartList,
     ProductList
   }
-}
+};
 </script>
 
 <style>
-html, body {
-  background: #F2F6FA;
+html,
+body {
+  background: #f2f6fa;
 }
 
 #app {
@@ -39,7 +40,8 @@ html, body {
 }
 
 @media screen and (min-width: 769px) {
-  html, body {
+  html,
+  body {
     height: 100%;
   }
 }
