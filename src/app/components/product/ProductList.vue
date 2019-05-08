@@ -28,6 +28,11 @@ export default {
   },
   components: {
     ProductListItem
+  },
+  methods: {
+    addCartItem(productItem) {
+      this.$store.dispatch("addCartItem", productItem);
+    }
   }
 };
 </script>
